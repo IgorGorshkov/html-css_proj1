@@ -1,0 +1,38 @@
+.pagination {
+    margin: 18px 0 96px 0;
+    &__nav {
+        fill: #000000;
+    }
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        padding: 12px 15px;
+        border: 1px solid #EBEBEB;}
+    &__link {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #e2dfdf;
+        margin: 6px;
+        &:hover {
+            color: #EF5B70;
+        }
+    }
+    &__active {
+        color: #EF5B70;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .pagination {
+        margin: 24px 0 64px 0;
+}
+}

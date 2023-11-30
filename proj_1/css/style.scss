@@ -1,0 +1,51 @@
+@import 'module/var';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows:min-content 1fr  min-content;
+}
+
+.container {
+    max-width: 1160px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+    max-width: calc(768px - 16px*2);
+    padding: 0;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: calc(375px - 8px*2);
+        padding: 0;
+    }
+}
+}
+
+
+@import 'module/header';
+@import 'module/promo';
+@import 'module/category';
+@import 'module/subscribe';
+@import 'module/delivery';
+@import 'module/footer';
+@import 'module/items';
+@import 'module/catalogheading';
+@import "module/filters";
+@import 'module/pagination';
+@import 'module/showcase';
+@import 'module/product';
+@import 'module/shoppingcart';
+@import 'module/registration'

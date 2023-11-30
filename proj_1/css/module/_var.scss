@@ -1,0 +1,7 @@
+$hovercolor: #F16D7F;
+
+@mixin centerColumn() {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

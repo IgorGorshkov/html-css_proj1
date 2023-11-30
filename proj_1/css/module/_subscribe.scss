@@ -1,0 +1,108 @@
+.subscribe {
+    display: flex;
+    align-items: center;
+    min-height: 448px;
+    background: url(../img/subscribe_back.png) no-repeat;
+    background-size: 100% 100%; 
+    &__wrap {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__info {
+        max-width: 360px;
+        text-align: center;}
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__heading {
+        margin: 19px 0 32px 0;
+        text-align: center;
+    }
+    &__sub {
+        max-width: 557px;
+        font-size: 24px;
+        line-height: 40,13%;
+        color: #222224;
+        margin-bottom: 8px;
+        }
+    &__text {
+        font-size: 18px;
+        line-height: 30,1px;
+        color:#222224;
+        }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__input {
+        background:#E1E1E1;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        padding: 20px;
+        padding-right: 60px;
+        &:focus {
+            outline: $hovercolor;
+        }
+    }
+    &__btn {
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: $hovercolor;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transition: 2s;
+    &:hover {
+        background-color:#E05C6E;
+        transform: scale(1.2);
+        }
+    &:focus {
+            outline: $hovercolor;
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .subscribe {
+        &__wrap {
+            flex-direction: column;
+        }
+        &__left {
+            padding: 53px 0 60px 0;
+        }
+        &__info {
+            padding-top: 16px;
+        }
+        &__heading {
+            padding-bottom: 27px;
+            margin: 0;
+        }
+        &__button {
+            padding-bottom: 140px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .subscribe {
+        &__left {
+        padding: 53px 0 60px 0;
+        }
+        &__button {
+        padding-bottom: 109px;
+        }
+    }
+}

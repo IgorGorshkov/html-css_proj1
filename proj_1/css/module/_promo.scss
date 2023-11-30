@@ -1,0 +1,84 @@
+.promo {
+    background: #F1E4E6;
+    height: 100vh;
+
+        &__title {
+            padding-left: 20px;
+            border-left: 12px solid $hovercolor;
+            & h1 {
+                font-weight: 900;
+                font-size: 48px;
+                line-height: 58px;
+                color: #222222;
+            }
+            & span {
+                font-size: 32px;
+                line-height: 38.4px;
+            }
+        }
+        
+        &__wrap {
+            height: 100vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            background: url("../img/man.png") no-repeat -228px 0;
+                    background-size: contain;
+        }
+        &__decor {
+            color:$hovercolor;
+        }
+}
+
+
+@media (max-width: 1160px) {
+    .promo {
+        max-height: 368px;
+        &__wrap {
+        max-height: 368px;
+        background-size: contain;
+        background-position: inherit;
+        }
+        &__title {
+            padding-right: 16px;
+        & h1 {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 52.8px;
+        color: #222222;
+    }
+        & span {
+        font-size: 24px;
+        line-height: 28.8px;
+        }
+    }
+}
+}
+
+@media (max-width: 650px) {
+    .promo {
+        &__wrap {
+        max-height: 363px;
+        background: none;
+        justify-content: center;
+    }
+        &__title {
+        & h1 {
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 45.6px;
+        color: #222222;
+    }
+        & span {
+        font-size: 20px;
+        line-height: 24px;
+        }
+    }
+    }
+}
